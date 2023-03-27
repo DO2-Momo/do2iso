@@ -1,6 +1,7 @@
 [submodule "airootfs/root/.yarp"]
 	path = airootfs/root/.yarp
 	url = https://github.com/do2-momo/yarp
+	branch = sharp
 [submodule "airootfs/usr/share/assets"]
 	path = airootfs/usr/share/assets
 	url = https://github.com/do2-momo/assets
