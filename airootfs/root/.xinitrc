@@ -1,2 +1,2 @@
-feh --bg-scale /usr/share/assets/backgrounds/purple_dark.png
+feh --bg-center /usr/share/assets/backgrounds/blue_dark.png
 exec i3
