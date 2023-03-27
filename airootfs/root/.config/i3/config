@@ -1,12 +1,22 @@
+set $mod Mod4
 
-exec picom
+# A binding for floating toggle has to be set for floating enable to work
+bindsym $mod+b floating toggle
 
-for_window [title="Welcome"] floating enable
-for_window [title="Welcome"] move position center
+# Yarp install should float at center
+for_window [title="SYSTEM.*"] floating enable
+for_window [title="SYSTEM.*"] move position center
 
-bar {
-    i3bar_command i3status
-    hidden_state hide
-}
+# Windows should have 3 pixels border
+for_window [title="^.*"] border pixel 3
 
-exec /root/.install.sh
+# Execute compositor
+exec_always --no-startup-id picom
+
+# Execute installer
+exec_always /root/.install.sh
+
+# Debug
+bindsym $mod+r reload
+bindsym $mod+c restart
+bindsym $mod+t exec xfce4-terminal
