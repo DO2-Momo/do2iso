@@ -30,8 +30,10 @@ automated_script ()
 }
 
 
-chmod +x /root/.install
-chmod +x /root/.yarp/target/release/rs-yarp
+chmod +x /root/.main.sh
+chmod +x /root/.install.sh
+
+chmod +x /root/.yarp/rs-yarp
 
 systemctl start NetworkManager.service
 
@@ -40,5 +42,4 @@ if [[ $(tty) == "/dev/tty1" ]]; then
     mount -o remount,size=12G /run/archiso/cowspace
     automated_script
     startx
-
 fi

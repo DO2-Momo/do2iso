@@ -1,1 +1,4 @@
-xfce4-terminal -e "zsh -c 'cd /root/.yarp ; ./target/release/rs-yarp'" -T "YARP"
+#!/usr/bin/env bash
+
+# Launch Installer
+xfce4-terminal -e "zsh -c './.main.sh'" -T "YARP"
