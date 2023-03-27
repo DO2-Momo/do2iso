@@ -1,4 +1,4 @@
-build: /tmp
+build: 
 	mkarchiso -v -w /tmp -o ./build ./
 
 build-installer:
