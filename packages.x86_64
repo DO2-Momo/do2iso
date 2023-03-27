@@ -136,3 +136,5 @@ i3-wm
 picom
 xfce4-terminal
 gparted
+i3status
+wget
