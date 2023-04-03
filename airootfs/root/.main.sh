@@ -31,5 +31,8 @@ while [ $(is_online) == "false" ]; do
     message ; pause ; nmtui
 done
 
+# Create log directory
+mkdir /logs/
+
 # Launch Installer
-cd /root/.yarp ; ./rs-yarp
+cd /root/.yarp ; ./rs-yarp > "/logs/YARP-DEBUG-$(date +'%d-%m-%Y')"
