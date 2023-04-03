@@ -35,4 +35,4 @@ done
 mkdir /logs/
 
 # Launch Installer
-cd /root/.yarp ; ./rs-yarp > "/logs/YARP-DEBUG-$(date +'%d-%m-%Y')"
+cd /root/.yarp ; ./rs-yarp | tee -a "/logs/YARP-DEBUG-$(date +'%d-%m-%Y')"
