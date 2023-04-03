@@ -29,17 +29,26 @@ automated_script ()
     fi
 }
 
+# Enable network manager
+systemctl start NetworkManager.service
 
+# Shutdown menu popup
+chmod +x /root/.config/.scripts/shutdown-menu.sh
+
+# Installation startup scripts
 chmod +x /root/.main.sh
 chmod +x /root/.install.sh
 
+# Installer application
 chmod +x /root/.yarp/rs-yarp
 
-systemctl start NetworkManager.service
-
 if [[ $(tty) == "/dev/tty1" ]]; then
-
+    # Add 12G of cowspace
     mount -o remount,size=12G /run/archiso/cowspace
+    
+    # Launch automated script
     automated_script
+
+    # Start i3 desktop
     startx
 fi
