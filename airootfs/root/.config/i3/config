@@ -56,3 +56,6 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 
 # Application launcher
 bindsym $mod+d exec --no-startup-id dmenu_run -nb '#282C34' -sf '#282C34' -sb '#56B6C2' -nf '#56B6C2' -p 'Search' -l 6 -fn 'Hack-10:style=Regular'
+
+# Shutdown menu
+bindsym $mod+Tab exec ~/.config/.scripts/shutdown-menu.sh
