@@ -5,3 +5,4 @@
 [submodule "airootfs/usr/share/assets"]
 	path = airootfs/usr/share/assets
 	url = https://github.com/do2-momo/assets
+	branch = main
