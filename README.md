@@ -1,23 +1,5 @@
 # do2iso
 
-## Dependencies
-
-`archiso` package
-
-<br/>
-
-## Build
-
-```
-make build
-```
-
-```
-make build-installer
-```
-
-
-This will create an `iso` image in `./build`
-
-
-
+> ATTENTION: 
+>
+> Use [DO2-Momo/do2dk](https://github.com/DO2-Momo/do2dk) for a building do2iso images
