@@ -31,8 +31,9 @@ while [ $(is_online) == "false" ]; do
     message ; pause ; nmtui
 done
 
-# Create log directory
-mkdir /logs/
-
 # Launch Installer
-cd /root/.yarp ; ./rs-yarp | tee -a "/logs/YARP-DEBUG-$(date +'%d-%m-%Y')"
+cd /root/.yarp ; 
+
+./rs-yarp | tee -a "/logs/YARP-DEBUG-$(date +'%d-%m-%Y')";
+
+echo "Press 'Super + Tab' to open a shutdown menu"
