@@ -35,5 +35,3 @@ done
 cd /root/.yarp ; 
 
 ./rs-yarp | tee -a "/logs/YARP-DEBUG-$(date +'%d-%m-%Y')";
-
-echo "Press 'Super + Tab' to open a shutdown menu"
